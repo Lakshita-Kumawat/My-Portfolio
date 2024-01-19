@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(45deg,rgb(206, 182, 222),rgb(251, 152, 169));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#head {
+    font-size: 2rem;
+    color: white;
+    margin: 0.5rem 0.5rem 0.5rem 1rem;
+    font-weight: 600;
+}
+
+#element {
+    margin-right: 1rem;
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#element li {
+    padding: 1.2rem;
+}
+
+#element li a {
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+}
+
+main #sec {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly ;
+    padding: 5rem 0;
+}
+
+#textconta {
+    position: relative;
+    box-sizing: border-box;
+    width: 34rem;
+    height: 9rem;
+    background-color: white;
+    text-align: center;
+    border-radius: 0.6rem;
+}
+
+#textconta::after,#textconta::before{
+    position: absolute;
+    content:'';
+    width: 34rem;
+    height: 9.2rem;
+    background: linear-gradient(45deg,rgb(171, 138, 191),rgb(224, 101, 122));
+    z-index: -1;
+}
+
+#textconta::after{
+    top: -8px;
+    left: -8px;
+    border-radius: 10px 10px;
+}
+
+#textconta::before{
+    bottom: -8px;
+    right: -8px;
+    border-radius: 10px 10px;
+}
+
+#textconta h1,
+#textconta h2 {
+    color: #fc9cc1;
+    animation: hide 4s 1;
+}
+
+#textconta h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+#textconta h2 {
+    font-size: 2rem;
+}
+
+#conta {
+    width: 19rem;
+    height: 19rem;
+    margin-right: 80px;
+    border-radius: 100%;
+}
+
+#conta::before {
+    content: '';
+    position: absolute;
+    width: 19.5rem;
+    height: 19.5rem;
+    border-radius: 100%;;
+    background: linear-gradient(45deg,rgb(171, 138, 191),rgb(186, 118, 129),rgb(224, 101, 122));
+    z-index: -1;
+}
+
+#conta img {
+    width: 19rem;
+    height: 19rem;
+    background-color: rgb(206, 239, 255);
+    border-radius: 100%;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+aside #line{
+    position: relative;
+    background: linear-gradient(45deg,rgb(171, 138, 191),rgb(224, 101, 122));
+    height: 30px;
+    width: 100%;
+}
+
+footer{
+    height: 100%;
+    text-align: center;
+    background-color:#dcb0c8;
+    font-family: 'Roboto Slab',sans-serif;
+}
+
+footer h2{
+    padding-top: 1.2rem;
+    color: rgb(27, 26, 26);
+}
+
+footer h3{
+    padding: 0.6rem 0;
+    color: rgb(14, 14, 14);
+}
+
+footer a{
+    font-size: 1.2rem;
+    color: rgb(124, 41, 152);
+    text-decoration: none;
+}
+
+footer img{
+    display: block;
+    margin: auto;
+    width: 10.5rem;
+    height: 8rem;
+    padding: 0.6rem;
+}
+
+@media (max-width:1024px) {
+
+    #textconta h1{
+        font-size: 2.2rem;
+        margin: 1rem 1.2rem;
+    }
+
+    #textconta h2 {
+        font-size: 2rem;
+        margin: 0 5rem;
+    }
+
+}
+
+@media (max-width:992px) {
+
+    #textconta h1{
+        font-size: 2.2rem;
+        margin: 1rem 1.2rem;
+    }
+
+    #textconta h2 {
+        font-size: 2rem;
+        margin: 0 5rem;
+    }
+
+    #conta {
+        width: 19rem;
+        height: 19rem;
+        margin-right: 0px;
+    }
+
+    #conta img {
+        width: 19rem;
+        height: 19rem;
+    }
+}
+
+@media (max-width:768px) {
+
+    #textconta{
+        width: 27.5rem;
+        height: 8rem;
+    }
+
+    #textconta::after,#textconta::before{
+        width: 27.5rem;
+        height: 8.2rem;
+    }
+
+    #textconta h1{
+        font-size: 2rem;
+        margin: 1rem 1.2rem;
+    }
+
+    #textconta h2 {
+        font-size: 1.8rem;
+        margin: 0 5rem;
+    }
+
+    #conta {
+        width: 16.5rem;
+        height: 16.5rem;
+        margin-right: 0px;
+    }
+
+    #conta::before {
+        width: 17rem;
+        height: 17rem;
+    }
+
+    #conta img {
+        width: 16.5rem;
+        height: 16.5rem;
+    }
+}
+
+@media (max-width:600px) {
+
+    main #sec{
+        flex-direction: column-reverse;
+    }
+
+    #textconta{
+        margin-top: 7%;
+        width: 26rem;
+        height: 7.5rem;
+    }
+
+    #textconta::after,#textconta::before{
+        width: 26rem;
+        height: 7.7rem;
+    }
+
+    #textconta h1{
+        font-size: 2rem;
+        margin: 1rem 1.2rem;
+    }
+
+    #textconta h2 {
+        font-size: 1.8rem;
+        margin: 0 0.5rem;
+    }
+
+    #conta {
+        width: 16.5rem;
+        height: 16.5rem;
+        margin-right: 0px;
+    }
+
+    #conta::before {
+        width: 17rem;
+        height: 17rem;
+    }
+
+    #conta img {
+        width: 16.5rem;
+        height: 16.5rem;
+    }
+}
