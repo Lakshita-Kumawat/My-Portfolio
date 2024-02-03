@@ -35,6 +35,10 @@ header {
     text-decoration: none;
 }
 
+#element li a:hover{
+    text-decoration: underline;
+}
+
 main #sec {
     display: flex;
     align-items: center;
@@ -45,8 +49,8 @@ main #sec {
 #textconta {
     position: relative;
     box-sizing: border-box;
-    width: 34rem;
-    height: 9rem;
+    width: 27.5rem;
+    height: 7.5rem;
     background-color: white;
     text-align: center;
     border-radius: 0.6rem;
@@ -55,8 +59,8 @@ main #sec {
 #textconta::after,#textconta::before{
     position: absolute;
     content:'';
-    width: 34rem;
-    height: 9.2rem;
+    width: 27.5rem;
+    height: 7.7rem;
     background: linear-gradient(45deg,rgb(171, 138, 191),rgb(224, 101, 122));
     z-index: -1;
 }
@@ -80,34 +84,33 @@ main #sec {
 }
 
 #textconta h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 1rem 0;
 }
 
 #textconta h2 {
-    font-size: 2rem;
+    font-size: 1.9rem;
 }
 
 #conta {
     width: 19rem;
     height: 19rem;
-    margin-right: 80px;
     border-radius: 100%;
 }
 
 #conta::before {
     content: '';
     position: absolute;
-    width: 19.5rem;
-    height: 19.5rem;
+    width: 18.2rem;
+    height: 18.2rem;
     border-radius: 100%;;
     background: linear-gradient(45deg,rgb(171, 138, 191),rgb(186, 118, 129),rgb(224, 101, 122));
     z-index: -1;
 }
 
 #conta img {
-    width: 19rem;
-    height: 19rem;
+    width: 17.5rem;
+    height: 17.5rem;
     background-color: rgb(206, 239, 255);
     border-radius: 100%;
 }
@@ -163,77 +166,89 @@ footer img{
 @media (max-width:1024px) {
 
     #textconta h1{
-        font-size: 2.2rem;
-        margin: 1rem 1.2rem;
+        font-size: 1.9rem;
+        margin: 1rem 1rem;
     }
 
     #textconta h2 {
-        font-size: 2rem;
-        margin: 0 5rem;
+        font-size: 1.8rem;
+        margin: 0 2rem;
     }
 
 }
 
 @media (max-width:992px) {
-
+    
     #textconta h1{
-        font-size: 2.2rem;
-        margin: 1rem 1.2rem;
+        font-size: 2rem;
+        margin: 1rem 0;
     }
 
     #textconta h2 {
-        font-size: 2rem;
-        margin: 0 5rem;
+        font-size: 1.8rem;
     }
 
     #conta {
-        width: 19rem;
+        width: 20rem;
         height: 19rem;
         margin-right: 0px;
     }
 
     #conta img {
-        width: 19rem;
+        width: 20rem;
         height: 19rem;
     }
 }
 
-@media (max-width:768px) {
-
+@media (max-width:800px) {
+    
     #textconta{
-        width: 27.5rem;
+        width: 24.5rem;
         height: 8rem;
     }
 
     #textconta::after,#textconta::before{
-        width: 27.5rem;
+        width: 24.5rem;
         height: 8.2rem;
     }
 
     #textconta h1{
         font-size: 2rem;
-        margin: 1rem 1.2rem;
+        margin: 1rem 0;
     }
 
     #textconta h2 {
         font-size: 1.8rem;
-        margin: 0 5rem;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    #textconta h1{
+        font-size: 1.9rem;
+        margin: 1rem 0.5rem;
+    }
+
+    #textconta h2 {
+        font-size: 1.7rem;
+        margin: 0 0.5rem;
     }
 
     #conta {
-        width: 16.5rem;
-        height: 16.5rem;
+        width: 15.5rem;
+        height: 15.5rem;
         margin-right: 0px;
     }
 
     #conta::before {
-        width: 17rem;
-        height: 17rem;
+        width: 16rem;
+        height: 16rem;
     }
 
     #conta img {
-        width: 16.5rem;
-        height: 16.5rem;
+        width: 15.5rem;
+        height: 15.5rem;
     }
 }
 
@@ -241,6 +256,7 @@ footer img{
 
     main #sec{
         flex-direction: column-reverse;
+        padding: 3rem 0;
     }
 
     #textconta{
@@ -278,5 +294,70 @@ footer img{
     #conta img {
         width: 16.5rem;
         height: 16.5rem;
+    }
+}
+
+@media (max-width:400px) {
+
+    #head{
+        margin: 0 0.8rem;
+    }
+
+    #element{
+        flex-direction: column-reverse;
+        margin-right:0.5rem ;
+    }
+
+    #element li {
+        padding: 0.4rem;
+    }    
+
+    #textconta{
+        margin-top: 7%;
+        width: 20.5rem;
+        height: 5.5rem;
+    }
+
+    #textconta::after,#textconta::before{
+        width: 20.5rem;
+        height: 5.7rem;
+    }
+
+    #textconta h1{
+        font-size: 1.6rem;
+        margin: 0.5rem 0.2rem;
+    }
+
+    #textconta h2 {
+        font-size: 1.5rem;
+        margin: 0 0.5rem;
+    }
+
+    #conta {
+        width: 15.5rem;
+        height: 15.5rem;
+        margin-right: 0px;
+    }
+
+    #conta::before {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    #conta img {
+        width: 15.5rem;
+        height: 15.5rem;
+    }
+
+    footer h2{
+        font-size: 1.4rem;
+    }
+
+    footer h3{
+        font-size: 1.05rem;
+    }
+
+    footer a{
+        font-size: 1.1rem;
     }
 }
