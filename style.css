@@ -167,12 +167,10 @@ footer img{
 
     #textconta h1{
         font-size: 1.9rem;
-        margin: 1rem 1rem;
     }
 
     #textconta h2 {
         font-size: 1.8rem;
-        margin: 0 2rem;
     }
 
 }
@@ -181,23 +179,12 @@ footer img{
     
     #textconta h1{
         font-size: 2rem;
-        margin: 1rem 0;
     }
 
     #textconta h2 {
         font-size: 1.8rem;
     }
-
-    #conta {
-        width: 20rem;
-        height: 19rem;
-        margin-right: 0px;
-    }
-
-    #conta img {
-        width: 20rem;
-        height: 19rem;
-    }
+    
 }
 
 @media (max-width:800px) {
@@ -214,7 +201,6 @@ footer img{
 
     #textconta h1{
         font-size: 2rem;
-        margin: 1rem 0;
     }
 
     #textconta h2 {
@@ -227,12 +213,10 @@ footer img{
 
     #textconta h1{
         font-size: 1.9rem;
-        margin: 1rem 0.5rem;
     }
 
     #textconta h2 {
         font-size: 1.7rem;
-        margin: 0 0.5rem;
     }
 
     #conta {
@@ -272,12 +256,10 @@ footer img{
 
     #textconta h1{
         font-size: 2rem;
-        margin: 1rem 1.2rem;
     }
 
     #textconta h2 {
         font-size: 1.8rem;
-        margin: 0 0.5rem;
     }
 
     #conta {
@@ -330,7 +312,6 @@ footer img{
 
     #textconta h2 {
         font-size: 1.5rem;
-        margin: 0 0.5rem;
     }
 
     #conta {
