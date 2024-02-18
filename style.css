@@ -3,13 +3,6 @@
     padding: 0;
 }
 
-:root{
-    --color-blue-800:#323c51;
-    --color-blue-300:#6D98BA;
-    --color-blue-100:#2c506c8f;
-    
-}
-
 header {
     display: flex;
     align-items: center;
@@ -24,6 +17,7 @@ header {
     color: rgb(224, 217, 217);
     margin: 0.5rem 0.5rem 0.5rem 1rem;
     font-weight: 600;
+    text-decoration: none;
 }
 
 #element {
@@ -171,7 +165,7 @@ main #sec2{
 }
 
 #sec2 ul img{
-    width: 35rem;
+    width: 36rem;
     height: 20rem;
     border: 2px solid rgb(26, 25, 25);
 }
@@ -182,7 +176,7 @@ main #sec2{
 }
 
 #sec2 ul h5{
-    color: white;
+    color: rgb(224, 217, 217);
     font-size: 1.5rem;
 }
 
@@ -195,6 +189,49 @@ main #sec2{
     text-decoration: underline;
 }
 
+#sec3 {
+    background-image: url("wall3.jpg");
+    background-size: cover;
+    padding: 3rem 1rem;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+
+
+#sec3 #laptop_conta{
+    width: 30rem;
+    height: 30rem;
+}
+
+#sec3 #laptop_conta img{
+    width: 100%;
+    height: 100%;
+}
+
+#sec3 #aboutMe{
+    background-color: rgba(0, 0, 0, 0.391);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+#sec3 #aboutMe h2{
+    color: rgb(200, 41, 41);
+    font-size: 2.1rem;
+    text-decoration: underline;
+}
+
+#sec3 #aboutMe h3{
+    color: rgb(224, 217, 217);
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+
+#sec3 #aboutMe p{
+    font-size: 1.3rem;
+}
+
 @keyframes hide {
     0% {
         opacity: 0;
@@ -205,138 +242,3 @@ main #sec2{
     }
 }
 
-@media (max-width:1024px) {
-
-    #textconta h1{
-        font-size: 1.9rem;
-    }
-
-    #textconta h2 {
-        font-size: 1.8rem;
-    }
-
-}
-
-@media (max-width:992px) {
-    
-    #textconta h1{
-        font-size: 2rem;
-    }
-
-    #textconta h2 {
-        font-size: 1.8rem;
-    }
-    
-}
-
-@media (max-width:800px) {
-    
-    #textconta{
-        height: 8rem;
-    }
-
-    #textconta h1{
-        font-size: 2rem;
-    }
-
-    #textconta h2 {
-        font-size: 1.8rem;
-    }
-
-}
-
-@media (max-width:768px) {
-
-    #textconta h1{
-        font-size: 1.9rem;
-    }
-
-    #textconta h2 {
-        font-size: 1.7rem;
-    }
-
-    #conta {
-        width: 15.5rem;
-        height: 15.5rem;
-        margin-right: 0px;
-    }
-
-    #conta img {
-        width: 15.5rem;
-        height: 15.5rem;
-    }
-}
-
-@media (max-width:600px) {
-
-    main #sec{
-        flex-direction: column-reverse;
-        padding: 3rem 0;
-    }
-
-    #textconta{
-        margin-top: 7%;
-        height: 7.5rem;
-    }
-
-    #textconta h1{
-        font-size: 2rem;
-    }
-
-    #textconta h2 {
-        font-size: 1.8rem;
-    }
-
-    #conta {
-        width: 16.5rem;
-        height: 16.5rem;
-        margin-right: 0px;
-    }
-
-    #conta img {
-        width: 16.5rem;
-        height: 16.5rem;
-    }
-}
-
-@media (max-width:400px) {
-
-    #head{
-        margin: 0 0.8rem;
-    }
-
-    #element{
-        flex-direction: column-reverse;
-        margin-right:0.5rem ;
-    }
-
-    #element li {
-        padding: 0.4rem;
-    }    
-
-    #textconta{
-        margin-top: 7%;
-        height: 5.5rem;
-    }
-
-    #textconta h1{
-        font-size: 1.6rem;
-        margin: 0.5rem 0.2rem;
-    }
-
-    #textconta h2 {
-        font-size: 1.5rem;
-    }
-
-    #conta {
-        width: 15.5rem;
-        height: 15.5rem;
-        margin-right: 0px;
-    }
-
-    #conta img {
-        width: 15.5rem;
-        height: 15.5rem;
-    }
-
-}
